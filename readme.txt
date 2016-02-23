@@ -17,7 +17,7 @@ If you use the Genesis theme framework along with Seriously Simple Podcasting th
 
 **How to contribute**
 
-If you want to contribute to Seriously Simple Stats, you can [fork the GitHub repository](https://github.com/hlashbrooke/Seriously-Simple-Podcasting-Genesis-Support) - all pull requests will be reviewed and merged if they fit into the goals for the plugin.
+If you want to contribute to this plugin, you can [fork the GitHub repository](https://github.com/hlashbrooke/Seriously-Simple-Podcasting-Genesis-Support) - all pull requests will be reviewed and merged if they fit into the goals for the plugin.
 
 == Installation ==
 
