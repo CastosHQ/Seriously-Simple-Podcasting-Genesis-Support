@@ -13,7 +13,7 @@ Adds full compatibility for the Genesis theme framework to Seriously Simple Podc
 
 > This plugin is an add-on for [Seriously Simple Podcasting](http://www.seriouslysimplepodcasting.com/).
 
-If you use the Genesis theme framework along with Seriously Simple Podcasting then this plugin is for you - it adds support for the Genesis custom post type features to the `podcast` post type that is built into Seriously Simple Podcasting.
+If you use the [Genesis theme framework](http://my.studiopress.com/themes/genesis/) along with [Seriously Simple Podcasting](http://www.seriouslysimplepodcasting.com/) then this plugin is for you - it adds support for the Genesis custom post type features to the `podcast` post type that is built into Seriously Simple Podcasting.
 
 **How to contribute**
 
@@ -31,12 +31,12 @@ Installing "Seriously Simple Podcasting Genesis Support" can be done either by s
 
 = What kind of Genesis support does this plugin provide? =
 
-This plugin adds support for the various post type features that Genesis requires for post types to display and function correctly inside its framework.
+This plugin adds support to the `podcast` post type for the various features that Genesis requires for post types to display and function correctly inside its framework.
 
 == Changelog ==
 
 = 1.0 =
-* 2016-02-23
+* 2016-03-01
 * Initial release
 
 == Upgrade Notice ==
