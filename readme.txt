@@ -1,7 +1,7 @@
 === Seriously Simple Podcasting Genesis Support ===
 Contributors: PodcastMotor, psykro, hlashbrooke
 Tags: seriously simple podcasting, genesis, add-ons
-Requires at least: 4.2
+Requires at least: 4.5
 Tested up to: 5.0
 Stable tag: 1.0.1
 License: GPLv2 or later
