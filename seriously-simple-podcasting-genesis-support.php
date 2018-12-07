@@ -1,13 +1,13 @@
 <?php
 /*
  * Plugin Name: Seriously Simple Podcasting Genesis Support
- * Version: 1.0
+ * Version: 1.0.1
  * Plugin URI: https://wordpress.org/plugins/seriously-simple-podcasting-genesis-support
  * Description: Adds full compatibility for the Genesis theme framework to Seriously Simple Podcasting.
- * Author: Hugh Lashbrooke
- * Author URI: http://www.hughlashbrooke.com/
+ * Author: Castos
+ * Author URI: https://castos.com/
  * Requires at least: 4.3
- * Tested up to: 4.4.2
+ * Tested up to: 5.0
  *
  * Text Domain: seriously-simple-podcasting-genesis-support
  *
