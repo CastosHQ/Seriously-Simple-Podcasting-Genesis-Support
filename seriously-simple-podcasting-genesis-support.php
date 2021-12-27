@@ -1,13 +1,14 @@
 <?php
 /*
  * Plugin Name: Seriously Simple Podcasting Genesis Support
- * Version: 1.0.1
+ * Version: 1.1.0
  * Plugin URI: https://wordpress.org/plugins/seriously-simple-podcasting-genesis-support
  * Description: Adds full compatibility for the Genesis theme framework to Seriously Simple Podcasting.
  * Author: Castos
  * Author URI: https://castos.com/
- * Requires at least: 4.5
- * Tested up to: 5.0
+ * Requires PHP: 5.6
+ * Requires at least: 4.4
+ * Tested up to: 5.8
  *
  * Text Domain: seriously-simple-podcasting-genesis-support
  *
@@ -30,7 +31,7 @@ if ( is_ssp_active() ) {
 
 	function ssp_add_genesis_support() {
 
-		if ( ! defined( 'SSP_CPT_PODCAST' ) ) {
+		if ( ! defined( 'SSP_CPT_PODCAST' ) || ! function_exists( 'ssp_post_types' ) ) {
 			return;
 		}
 
@@ -41,6 +42,10 @@ if ( is_ssp_active() ) {
 			'genesis-rel-author',
 		) );
 
-		add_post_type_support( SSP_CPT_PODCAST, $supports );
+		$ssp_post_types = ssp_post_types( true, false );
+
+		foreach ( $ssp_post_types as $ssp_post_type ) {
+			add_post_type_support( $ssp_post_type, $supports );
+		}
 	}
 }
