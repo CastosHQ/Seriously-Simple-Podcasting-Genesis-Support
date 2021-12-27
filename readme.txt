@@ -1,9 +1,9 @@
 === Seriously Simple Podcasting Genesis Support ===
-Contributors: hlashbrooke
+Contributors: PodcastMotor, psykro, hlashbrooke
 Tags: seriously simple podcasting, genesis, add-ons
-Requires at least: 4.2
-Tested up to: 5.5
-Stable tag: 1.0
+Requires at least: 4.5
+Tested up to: 5.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,10 @@ Installing "Seriously Simple Podcasting Genesis Support" can be done either by s
 This plugin adds support to the `podcast` post type for the various features that Genesis requires for post types to display and function correctly inside its framework.
 
 == Changelog ==
+
+= 1.0.1 =
+* 2018-12-07
+* Tested up to 5.0 update
 
 = 1.0 =
 * 2016-03-01
