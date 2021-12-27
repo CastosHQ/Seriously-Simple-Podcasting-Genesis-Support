@@ -6,8 +6,9 @@
  * Description: Adds full compatibility for the Genesis theme framework to Seriously Simple Podcasting.
  * Author: Castos
  * Author URI: https://castos.com/
- * Requires at least: 4.5
- * Tested up to: 5.0
+ * Requires PHP: 5.6
+ * Requires at least: 4.4
+ * Tested up to: 5.8
  *
  * Text Domain: seriously-simple-podcasting-genesis-support
  *
@@ -24,22 +25,23 @@ if ( ! function_exists( 'is_ssp_active' ) ) {
 	require_once( 'ssp-includes/ssp-functions.php' );
 }
 
-if( is_ssp_active() ) {
+if ( is_ssp_active() ) {
 
 	add_action( 'init', 'ssp_add_genesis_support' );
 
-	function ssp_add_genesis_support () {
+	function ssp_add_genesis_support() {
+
+		if ( ! defined( 'SSP_CPT_PODCAST' ) ) {
+			return;
+		}
 
 		$supports = apply_filters( 'ssp_genesis_support_features', array(
 			'genesis-seo',
-			'genesis-layouts',
-			'genesis-cpt-archives-settings',
-			'genesis-simple-sidebars',
 			'genesis-scripts',
+			'genesis-layouts',
 			'genesis-rel-author',
 		) );
 
-		add_post_type_support( 'post_type', $supports );
+		add_post_type_support( SSP_CPT_PODCAST, $supports );
 	}
-
 }
