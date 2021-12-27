@@ -24,22 +24,23 @@ if ( ! function_exists( 'is_ssp_active' ) ) {
 	require_once( 'ssp-includes/ssp-functions.php' );
 }
 
-if( is_ssp_active() ) {
+if ( is_ssp_active() ) {
 
 	add_action( 'init', 'ssp_add_genesis_support' );
 
-	function ssp_add_genesis_support () {
+	function ssp_add_genesis_support() {
+
+		if ( ! defined( 'SSP_CPT_PODCAST' ) ) {
+			return;
+		}
 
 		$supports = apply_filters( 'ssp_genesis_support_features', array(
 			'genesis-seo',
-			'genesis-layouts',
-			'genesis-cpt-archives-settings',
-			'genesis-simple-sidebars',
 			'genesis-scripts',
+			'genesis-layouts',
 			'genesis-rel-author',
 		) );
 
-		add_post_type_support( 'post_type', $supports );
+		add_post_type_support( SSP_CPT_PODCAST, $supports );
 	}
-
 }
