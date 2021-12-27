@@ -6,8 +6,9 @@
  * Description: Adds full compatibility for the Genesis theme framework to Seriously Simple Podcasting.
  * Author: Castos
  * Author URI: https://castos.com/
- * Requires at least: 4.5
- * Tested up to: 5.0
+ * Requires PHP: 5.6
+ * Requires at least: 4.4
+ * Tested up to: 5.8
  *
  * Text Domain: seriously-simple-podcasting-genesis-support
  *
